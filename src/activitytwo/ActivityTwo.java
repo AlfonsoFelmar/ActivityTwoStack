@@ -24,35 +24,55 @@ public class ActivityTwo {
         
         
         while(!condition) {
-            
-            System.out.println("\nPush an element input (1)");
+            System.out.println("\nExit (0): ");
+            System.out.println("Push an element input (1)");
             System.out.println("Pop an element input (2)");
             System.out.println("Peek stack input (3)");
-            System.out.println("Loop through stack input (4)");
+            System.out.println("Peek at bottom stack input (4)");
+            System.out.println("Loop through stack input (5)");
+            System.out.println("Remove all duplicates input (6)");
+            System.out.println("Count all elements (7)");
+            System.out.println("Add stack to another stack (8)");
             System.out.println("Input: ");
             int choice = scn.nextInt();
             
-            
-            if (choice == 1) {
-                System.out.println("\nPush data to Stack: ");
-                double push = scn.nextDouble();
-                classOneStack.push(push);
-            }
-            else if (choice == 2) {
-                System.out.println("\nPopped this element: " + classOneStack.pop() + "\n");
-                
-            }
-            else if (choice == 3) {
-                System.out.println("\nPeeked at the top: " + classOneStack.peek()+ "\n" );
-                
-            }
-            else if (choice == 4) {
-                classOneStack.loopStack();
-                    
-            }
-            else {
-                System.out.println("Can you read?" + "\n");
-                condition = false;
+            switch (choice) {
+                case 0:
+                    condition = true;
+                    break;
+                case 1:
+                    System.out.println("\nPush data to Stack: ");
+                    // e while loop diri para mo loop ra siya permi
+                    // para mag add og elements until mo stop na ang user
+                    // problem if you add to many values how does our back end
+                    // handle it ?????AsdASD?ASDASFasdf/lajsd
+                    double push = scn.nextDouble();
+                    classOneStack.push(push);
+                    break;
+                case 2:
+                    System.out.println("\nPopped this element: " + classOneStack.pop() + "\n");
+                    break;
+                case 3:
+                    System.out.println("\nPeeked at the top: " + classOneStack.peek()+ "\n" );
+                    break;
+                case 4:
+                    System.out.println("\nPeeked at the bottom: " + classOneStack.bottomElement() + "\n");
+                    break;
+                case 5:
+                    classOneStack.loopStack();
+                    break;
+                case 6:
+                    classOneStack.removeDuplicates();
+                    break;
+                case 7:
+                    classOneStack.countElements();
+                    break;
+                case 8:
+                    break;
+                default:
+                    System.out.println("Can you read?" + "\n");
+                    condition = false;
+                    break;
             }
             
 
