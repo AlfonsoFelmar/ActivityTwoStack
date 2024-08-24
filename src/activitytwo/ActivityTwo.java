@@ -50,13 +50,13 @@ public class ActivityTwo {
                     classOneStack.push(push);
                     break;
                 case 2:
-                    System.out.println("\nPopped this element: " + classOneStack.pop() + "\n");
+                    System.out.println("\nPopped this element: " + classOneStack.pop());
                     break;
                 case 3:
-                    System.out.println("\nPeeked at the top: " + classOneStack.peek()+ "\n" );
+                    System.out.println("\nPeeked at the top: " + classOneStack.peek());
                     break;
                 case 4:
-                    System.out.println("\nPeeked at the bottom: " + classOneStack.bottomElement() + "\n");
+                    System.out.println("\nPeeked at the bottom: " + classOneStack.bottomElement());
                     break;
                 case 5:
                     classOneStack.loopStack();
