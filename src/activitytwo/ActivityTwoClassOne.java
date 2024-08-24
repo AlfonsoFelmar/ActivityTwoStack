@@ -89,7 +89,11 @@ public class ActivityTwoClassOne {
         }
         else {
             System.out.println("\nStack:");
-            for (int i = 0; i <= top; i++) {
+            
+            //int i = 0; i <= top; i++
+            // since baliktad if kanang naa sa taas gamiton
+            // 
+            for (int i = top; i >= 0; i-- ) {
             System.out.println(StackArray[i]);           
         }
         }
