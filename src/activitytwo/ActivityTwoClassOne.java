@@ -28,27 +28,30 @@ public class ActivityTwoClassOne {
             System.out.println("You're stack is full");
         }
     }
+    
     // remove sa duplicates HOW
     public void removeDuplicates(){
 
     }
     
-    // count all stack elements DONEEE
+    // count all stack elements doesnt work well
+    // works well na just add + 1 to top and put in a variable so easy?
+    // why take so long???
     public void countElements(){
-        if (isEmpty()) {
-            System.out.println("Stack is empty!");
+  
+        if (!isEmpty()) {
+            int sum = top + 1;
+            System.out.println("Elements in stack: " + sum);
         }
         else {
-            int sum = 0;
-            for (int i = 0; i <= top; i++) {
-                sum += i;
-            }
-            System.out.println("Elements in stack: " + sum);
+            System.out.println("Stack is empty!");
+
+            
         }
     }
     
     
-    // see bottom element DONEEEEE
+    // see bottom element works
     public double  bottomElement(){
         if (!isEmpty()) {
             return StackArray[0];
@@ -67,12 +70,20 @@ public class ActivityTwoClassOne {
     public void stackStack(){
         
     }
-    // loop sa stack WORK NA
+    // loop sa stack doesnt work well
+    // mo work well na siya after top atong gi condition
+    // rather than Size kay if size mo loop siya apil sa 0.0 values
     public void loopStack(){
-        System.out.println("\n");
-        for (int i = 0; i < Size; i++) {
+        if (isEmpty()) {
+            System.out.println("Stack is empty! ");
+        }
+        else {
+            System.out.println("\nStack:");
+            for (int i = 0; i <= top; i++) {
             System.out.println(StackArray[i]);           
         }
+        }
+
     }
         
     // pops an element WORKing
