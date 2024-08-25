@@ -64,12 +64,12 @@ public class ActivityTwoClassOne {
     // mo work na siya? pero ang idk unsa na value ang ma add hahahahahhaha
     // akshgdalkjshdgaljkshdga
     // top element diay ang ma add okay
-        public void stackStack(){
-            for (int i = 0; i <= top; i++) {
-               if (!isFull()) {
-                   System.out.println("\nAdded stack to newstack: "
-                   + StackArray[i]);
-               newStack.push(StackArray[i]);
+    public void stackStack(){
+        for (int i = 0; i <= top; i++) {
+            if (!isFull()) {
+                System.out.println("\nAdded stack to newstack: "
+                + StackArray[i]);
+                newStack.push(StackArray[i]);
             } else {
                 System.out.println("\nYou're stack is full");
             }
@@ -80,16 +80,21 @@ public class ActivityTwoClassOne {
         // peek sa new stack wont work probably because gi ditso ra pag 
         // initialize ang stackarray and walay data makuha sa top which is
         // ang number of elements
-//        public void loopNewStack(){
-//            if(isEmpty()){
-//                System.out.println("Stack is empty! ");
-//            } else {
-//                for (int i = 0; i <= top; i++) {
-//                System.out.println(newStack.get(i));
-//            }
-//
-//            } 
-//        }
+    
+    // mo work na?? OH MY GHAD
+    // final najud?
+        public void loopNewStack(){
+            if(isEmpty()){
+                System.out.println("Stack is empty! ");
+            } else {
+                for (int i = 0; i <= top; i++) {
+                    System.out.println("\nNew Stack Elements: ");
+                System.out.println(newStack.get(top));
+            }
+
+            } 
+        
+        }
     
     
     // count all stack elements doesnt work well

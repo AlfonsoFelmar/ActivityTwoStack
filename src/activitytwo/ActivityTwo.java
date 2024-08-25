@@ -76,7 +76,7 @@ public class ActivityTwo {
                     classOneStack.stackStack();
                     break;
                 case 9:
-                    System.out.println("\nNew stack peek: "+classOneStack.newStack.peek());
+                    classOneStack.loopNewStack();
                     break;
                 default:
                     System.out.println("Can you read?" + "\n");
