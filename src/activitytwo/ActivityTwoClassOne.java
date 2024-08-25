@@ -67,6 +67,7 @@ public class ActivityTwoClassOne {
     // akshgdalkjshdgaljkshdga
     // top element diay ang ma add okay
     public void stackStack(){
+        
         for (int i = 0; i <= top; i++) {
             if (!isFull()) {
                 System.out.println("\nAdded stack to newstack: "
@@ -89,8 +90,9 @@ public class ActivityTwoClassOne {
             if(isEmpty()){
                 System.out.println("Stack is empty! ");
             } else {
+                System.out.println("\nNew Stack Elements: ");
                 for (int i = 0; i <= top; i++) {
-                    System.out.println("\nNew Stack Elements: ");
+                    
                 System.out.println(newStack.get(i));
             }
 
