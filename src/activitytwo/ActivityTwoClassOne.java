@@ -2,6 +2,7 @@ package activitytwo;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.Stack;
 
 /**
  *
@@ -12,6 +13,7 @@ public class ActivityTwoClassOne {
     private int Size;
     private double[] StackArray;
     private int top;
+    Stack<Double> newStack = new Stack<>();
     
     
     // constructor
@@ -58,10 +60,36 @@ public class ActivityTwoClassOne {
     }
     
     
-    // add stack to another stack HOW TF?
-    public void stackStack(){
+        // add stack to another stack HOW TF?
+    // mo work na siya? pero ang idk unsa na value ang ma add hahahahahhaha
+    // akshgdalkjshdgaljkshdga
+    // top element diay ang ma add okay
+        public void stackStack(){
+            for (int i = 0; i <= top; i++) {
+               if (!isFull()) {
+                   System.out.println("\nAdded stack to newstack: "
+                   + StackArray[i]);
+               newStack.push(StackArray[i]);
+            } else {
+                System.out.println("\nYou're stack is full");
+            }
+            }
+
+        }
         
-    }
+        // peek sa new stack wont work probably because gi ditso ra pag 
+        // initialize ang stackarray and walay data makuha sa top which is
+        // ang number of elements
+//        public void loopNewStack(){
+//            if(isEmpty()){
+//                System.out.println("Stack is empty! ");
+//            } else {
+//                for (int i = 0; i <= top; i++) {
+//                System.out.println(newStack.get(i));
+//            }
+//
+//            } 
+//        }
     
     
     // count all stack elements doesnt work well

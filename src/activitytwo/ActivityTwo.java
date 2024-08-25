@@ -2,6 +2,7 @@ package activitytwo;
 
 import java.util.Scanner;
 
+
 /**
  *
  * @author felmaralfonso
@@ -9,6 +10,8 @@ import java.util.Scanner;
 public class ActivityTwo {
 
     public static void main(String[] args) {
+ 
+        
         
         Scanner scn = new Scanner(System.in);
         
@@ -33,12 +36,14 @@ public class ActivityTwo {
             System.out.println("Remove all duplicates input (6)");
             System.out.println("Count all elements (7)");
             System.out.println("Add stack to another stack (8)");
+            System.out.println("Peek other stack (9)");
             System.out.println("Input: ");
             int choice = scn.nextInt();
             
             switch (choice) {
                 case 0:
-                    condition = true;
+                    System.out.println("GOD BLESS SIR MAO!");
+                    condition = true;   
                     break;
                 case 1:
                     System.out.println("\nPush data to Stack: ");
@@ -68,6 +73,10 @@ public class ActivityTwo {
                     classOneStack.countElements();
                     break;
                 case 8:
+                    classOneStack.stackStack();
+                    break;
+                case 9:
+                    System.out.println("\nNew stack peek: "+classOneStack.newStack.peek());
                     break;
                 default:
                     System.out.println("Can you read?" + "\n");
@@ -79,6 +88,8 @@ public class ActivityTwo {
             
      
         }
+        
+        
         
         
     }
