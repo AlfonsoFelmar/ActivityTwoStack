@@ -13,6 +13,8 @@ public class ActivityTwoClassOne {
     private int Size;
     private double[] StackArray;
     private int top;
+    
+    //new stack
     Stack<Double> newStack = new Stack<>();
     
     
@@ -89,7 +91,7 @@ public class ActivityTwoClassOne {
             } else {
                 for (int i = 0; i <= top; i++) {
                     System.out.println("\nNew Stack Elements: ");
-                System.out.println(newStack.get(top));
+                System.out.println(newStack.get(i));
             }
 
             } 

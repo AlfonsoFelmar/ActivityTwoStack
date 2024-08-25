@@ -14,7 +14,7 @@ public class ActivityTwo {
         
         
         Scanner scn = new Scanner(System.in);
-        
+       
         int stacksize;
         boolean condition = false;
         
@@ -27,6 +27,7 @@ public class ActivityTwo {
         
         
         while(!condition) {
+            
             System.out.println("\nExit (0): ");
             System.out.println("Push an element input (1)");
             System.out.println("Pop an element input (2)");
@@ -55,13 +56,16 @@ public class ActivityTwo {
                     classOneStack.push(push);
                     break;
                 case 2:
-                    System.out.println("\nPopped this element: " + classOneStack.pop());
+                    System.out.println("\nPopped this element: " 
+                            + classOneStack.pop());
                     break;
                 case 3:
-                    System.out.println("\nPeeked at the top: " + classOneStack.peek());
+                    System.out.println("\nPeeked at the top: " 
+                            + classOneStack.peek());
                     break;
                 case 4:
-                    System.out.println("\nPeeked at the bottom: " + classOneStack.bottomElement());
+                    System.out.println("\nPeeked at the bottom: "
+                            + "" + classOneStack.bottomElement());
                     break;
                 case 5:
                     classOneStack.loopStack();
@@ -79,7 +83,7 @@ public class ActivityTwo {
                     classOneStack.loopNewStack();
                     break;
                 default:
-                    System.out.println("Can you read?" + "\n");
+                    System.out.println("Can you read?\n");
                     condition = false;
                     break;
             }
